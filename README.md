@@ -832,7 +832,7 @@ M623
 # Change filament
 
 ```
-;===== A1 20251031 =======================
+;===== A1 20250206 =======================
 M1007 S0 ; turn off mass estimation
 G392 S0
 M620 S[next_extruder]A
@@ -912,11 +912,11 @@ M1002 set_filament_type:{filament_type[next_extruder]}
 M400
 M106 P1 S178
 M400 S3
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
 M400
 M106 P1 S0
@@ -945,11 +945,11 @@ G1 E[new_retract_length_toolchange] F300
 M400
 M106 P1 S178
 M400 S3
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
 M400
 M106 P1 S0
@@ -978,11 +978,11 @@ G1 E[new_retract_length_toolchange] F300
 M400
 M106 P1 S178
 M400 S3
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
 M400
 M106 P1 S0
@@ -1016,13 +1016,13 @@ G1 E-[new_retract_length_toolchange] F1800
 M400
 M106 P1 S178
 M400 S3
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
-G1 X-38.2 F18000
+G1 X-4.5 F18000
 G1 X-48.2 F3000
 M400
 G1 Z{max_layer_z + 3.0} F3000
@@ -1046,11 +1046,11 @@ M622 J1
 
   M106 P1 S178
   M400 S4
-  G1 X-38.2 F18000
+  G1 X-4.5 F18000
   G1 X-48.2 F3000
-  G1 X-38.2 F18000 ;wipe and shake
+  G1 X-4.5 F18000 ;wipe and shake
   G1 X-48.2 F3000
-  G1 X-38.2 F12000 ;wipe and shake
+  G1 X-4.5 F12000 ;wipe and shake
   G1 X-48.2 F3000
   M400
   M106 P1 S0
