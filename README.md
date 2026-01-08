@@ -2,7 +2,8 @@
 
 ```
 ;===== machine: A1 =========================
-;===== date: 20250822 ==================
+;===== date: 20240620 =====================
+;===== nozzle wipe adjust==============================
 G392 S0
 M9833.2
 ;M400
@@ -106,7 +107,7 @@ M211 X0 Y0 Z0 ;turn off soft endstop
 M975 S1 ; turn on
 
 G90
-G1 X-28.5 F30000
+G1 X-4.5 F30000
 G1 X-48.2 F3000
 
 M620 M ;enable remap
@@ -141,11 +142,11 @@ M104 S{nozzle_temperature_initial_layer[initial_no_support_extruder]}
 G92 E0
 G1 E-0.5 F300
 
-G1 X-28.5 F30000
+G1 X-4.5 F30000
 G1 X-48.2 F3000
-G1 X-28.5 F30000 ;wipe and shake
+G1 X-4.5 F30000 ;wipe and shake
 G1 X-48.2 F3000
-G1 X-28.5 F30000 ;wipe and shake
+G1 X-4.5 F30000 ;wipe and shake
 G1 X-48.2 F3000
 
 ;G392 S0
@@ -187,11 +188,11 @@ M622 J1
 
     M106 P1 S255
     M400 S5
-    G1 X-28.5 F18000
+    G1 X-4.5 F18000
     G1 X-48.2 F3000
-    G1 X-28.5 F18000 ;wipe and shake
+    G1 X-4.5 F18000 ;wipe and shake
     G1 X-48.2 F3000
-    G1 X-28.5 F12000 ;wipe and shake
+    G1 X-4.5 F12000 ;wipe and shake
     G1 X-48.2 F3000
     M400
     M106 P1 S0
@@ -201,11 +202,11 @@ M622 J1
         M983 F{outer_wall_volumetric_speed/2.4} A0.3 H[nozzle_diameter]; cali dynamic extrusion compensation
         M106 P1 S255
         M400 S5
-        G1 X-28.5 F18000
+        G1 X-4.5 F18000
         G1 X-48.2 F3000
-        G1 X-28.5 F18000 ;wipe and shake
+        G1 X-4.5 F18000 ;wipe and shake
         G1 X-48.2 F3000
-        G1 X-28.5 F12000 ;wipe and shake
+        G1 X-4.5 F12000 ;wipe and shake
         M400
         M106 P1 S0
     M623
@@ -215,11 +216,11 @@ M622 J1
     M984 A0.1 E1 S1 F{outer_wall_volumetric_speed/2.4} H[nozzle_diameter]
     M106 P1 S178
     M400 S7
-    G1 X-28.5 F18000
+    G1 X-4.5 F18000
     G1 X-48.2 F3000
-    G1 X-28.5 F18000 ;wipe and shake
+    G1 X-4.5 F18000 ;wipe and shake
     G1 X-48.2 F3000
-    G1 X-28.5 F12000 ;wipe and shake
+    G1 X-4.5 F12000 ;wipe and shake
     G1 X-48.2 F3000
     M400
     M106 P1 S0
