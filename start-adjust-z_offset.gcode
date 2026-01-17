@@ -578,9 +578,12 @@ M400
 
 ;===== for Textured PEI Plate , lower the nozzle as the nozzle was touching topmost of the texture when homing ==
 ;curr_bed_type={curr_bed_type}
-{if curr_bed_type=="Textured PEI Plate"}
-G29.1 Z{-0.02} ; for Textured PEI Plate
-{endif}
+;{if curr_bed_type=="Textured PEI Plate"}
+;G29.1 Z{-0.02} ; for Textured PEI Plate
+;{endif}
+
+;=== adjust z_offset ===
+G29.1 Z{+0.990}
 
 M960 S1 P0 ; turn off laser
 M960 S2 P0 ; turn off laser
