@@ -583,7 +583,7 @@ M400
 ;{endif}
 
 ;=== adjust z_offset ===
-G29.1 Z{+0.990}
+G29.1 Z{+0.50}
 
 M960 S1 P0 ; turn off laser
 M960 S2 P0 ; turn off laser
